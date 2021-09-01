@@ -22,7 +22,7 @@
 			<form id="form" class="form-horizontal" role="form">
 				<div class="form-group">
 					<label for="username" class="col control-label">Username:</label>
-					<div class="col-md-4">
+					<div class="col">
 						<input type="email" id="username" class="form-control" name="username" placeholder="Username">
 					</div>
 				</div>
@@ -31,7 +31,77 @@
 					<input type="file" id="image" name="image" class="btn btn-default form-control">
 				</div>
 
-				<div class="form-group text-center">
+				<div class="container">
+					<div class="row text-center">
+						<hr class="divider">
+						<h5>Additional inputs</h5>
+					</div>
+				</div>
+
+				<div class="form-group mt-3">
+					<div class="row">
+						<div class="col-md-2">
+							<label for="qualitySelect" class=" control-label">Image Quality:</label>
+							<select class="form-select" name="qualitySelect">
+								<option value="-" selected>-</option>
+								<option value="Poor">Poor</option>
+								<option value="Good">Good</option>
+							</select>
+						</div>
+
+						<div class="col-md-2 offset-2">
+							<label for="drPresent" class=" control-label">Diabetic Retinopathy:</label>
+							<select class="form-select" name="drPresent">
+								<option value="-" selected>-</option>
+								<option value="NODR">No DR</option>
+								<option value="MILD">Mild NPDR</option>
+								<option value="MODERATE">Moderate NPDR</option>
+								<option value="SEVERE">Severe NPDR</option>
+								<option value="PDR">PDR</option>
+							</select>
+						</div>
+
+						<div class="col-md-2 offset-2">
+							<label for="dme" class=" control-label">DME:</label>
+							<select class="form-select" name="dme">
+								<option value="-" selected>-</option>
+								<option value="NODME">No DME</option>
+								<option value="MILDDME">Mild DME</option>
+								<option value="MODERATEDME">Moderate DME</option>
+								<option value="SEVEREDME">Severe DME</option>
+							</select>
+						</div>
+
+					</div>
+
+					<div class="row mt-3">
+						<div class="col-md-4">
+							<label for="others" class=" control-label">Others:</label>
+							<div class="">
+								<input type="email" id="" class="form-control" name="others" placeholder="Others">
+							</div>
+						</div>
+						<div class="col-md-2 offset-2">
+							<label for="inputReferable" class=" control-label">Referable:</label>
+							<select class="form-select" name="inputReferable">
+								<option value="-" selected>-</option>
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+						</div>
+						<div class="col-md-2 offset-2">
+							<label for="capturedAt" class=" control-label">captured At:</label>
+							<select class="form-select" name="capturedAt">
+								<option value="-" selected>-</option>
+								<option value="VT">Vision Center</option>
+								<option value="CT">Command Center</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="form-group text-center mt-3">
 					<button class="btn-lg btn-primary" type="submit" id="submit" name="submit">Submit</button>
 				</div>
 			</form>
